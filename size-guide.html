@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>UrbanSteps</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Discover premium footwear for men, women, sports, and kids with UrbanSteps. Explore top brands, seasonal collections, and find your perfect fit.">
+
+    <meta name="keywords"
+        content="shoe store, footwear, sneakers, casual shoes, formal shoes, sports shoes, kids shoes, UrbanSteps">
+
+    <meta name="author" content="UrbanSteps">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="global-container">
+
+            <nav class="navbar">
+
+                <!-- Logo -->
+
+                <a href="index.html" class="logo">
+
+                    <img src="images/logo.png" alt="UrbanSteps Logo">
+
+                </a>
+
+                <!-- Navigation -->
+
+                <ul class="nav-menu">
+
+                    <li class="menu-close-item">
+
+                        <button class="menu-close">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+                    </li>
+
+                    <li><a href="index.html">Home 1</a></li>
+
+                    <li><a href="home-2.html">Home 2</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="collections.html">Collections</a></li>
+
+                    <li><a href="size-guide.html" class="active">Size Guide</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="mobile-toggle-group">
+
+                        <div class="mobile-toggle">
+
+                            <button id="mobile-theme-toggle">
+
+                                <i class="fa-solid fa-moon"></i>
+
+
+                            </button>
+
+                        </div>
+
+                        <div class="mobile-toggle">
+
+                            <button id="mobile-rtl-toggle">
+
+                                <i class="fa-solid fa-right-left"></i>
+
+                            </button>
+
+                        </div>
+
+                    </li>
+
+                    <li class="mobile-bulk-order">
+
+                        <a href="bulk-orders.html" class="primary-btn">
+
+                            Bulk Orders
+
+                        </a>
+
+                    </li>
+
+                    <li class="mobile-login">
+
+                        <a href="login.html" class="primary-btn">
+
+                            Login
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <!-- Right Side -->
+
+                <div class="nav-right">
+
+                    <button id="theme-toggle">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <button id="rtl-toggle">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+                    <a href="bulk-orders.html" class="bulk-order-btn">
+                        Bulk Orders
+                    </a>
+
+                    <a href="login.html" class="primary-btn">
+
+                        Login
+
+                    </a>
+
+                    <button class="menu-toggle">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+        <div class="nav-overlay"></div>
+
+    </header>
+
+
+    <!--======================================
+        Page Hero
+=======================================-->
+
+    <section class="page-hero">
+
+        <img src="images/collections-banner.jpg" alt="Contact Banner">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="global-container">
+
+            <div class="page-hero-content">
+
+                <h1>
+
+                    Find Your Perfect Fit
+
+                </h1>
+
+                <p>
+
+                    Use our easy size guide to choose the right footwear size for maximum comfort and confidence.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--======================================
+    Size Guide Chart
+=======================================-->
+
+    <section class="size-guide-chart section">
+
+        <div class="global-container">
+
+            <div class="section-title text-center">
+
+                <span class="section-subtitle">
+                    Shoe Size Chart
+                </span>
+
+                <h2>
+                    Find Your Perfect Size
+                </h2>
+
+                <p>
+                    Compare UK, US, EU, and Foot Length measurements to choose the right footwear size with confidence.
+                </p>
+
+            </div>
+
+            <div class="size-guide-chart-wrapper">
+
+                <div class="size-guide-chart-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>UK</th>
+                                <th>US</th>
+                                <th>EU</th>
+                                <th>Foot Length (CM)</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>39</td>
+                                <td>24.0</td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>40</td>
+                                <td>25.0</td>
+                            </tr>
+
+                            <tr>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>41</td>
+                                <td>26.0</td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>42</td>
+                                <td>27.0</td>
+                            </tr>
+
+                            <tr>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>43</td>
+                                <td>28.0</td>
+                            </tr>
+
+                            <tr>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>44</td>
+                                <td>29.0</td>
+                            </tr>
+
+                            <tr>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>45</td>
+                                <td>30.0</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--======================================
+    How To Measure
+=======================================-->
+
+    <section class="size-guide-measure section">
+
+        <div class="global-container">
+
+            <div class="size-guide-measure-wrapper">
+
+                <div class="size-guide-measure-image">
+
+                    <img src="images/measure-feet.jpg" alt="How to Measure Your Feet">
+
+                </div>
+
+                <div class="size-guide-measure-content">
+
+                    <span class="section-subtitle">
+
+                        Easy Measurement Guide
+
+                    </span>
+
+                    <h2>
+
+                        Measure Your Feet in 4 Simple Steps
+
+                    </h2>
+
+                    <p>
+
+                        Follow these simple steps to find your correct shoe size and enjoy the perfect fit every time.
+
+                    </p>
+
+                    <div class="size-guide-measure-step">
+
+                        <div class="size-guide-measure-number">01</div>
+
+                        <div class="size-guide-measure-text">
+
+                            <h4>Place Your Foot</h4>
+
+                            <p>Stand on a sheet of paper placed on a flat surface.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="size-guide-measure-step">
+
+                        <div class="size-guide-measure-number">02</div>
+
+                        <div class="size-guide-measure-text">
+
+                            <h4>Mark Both Ends</h4>
+
+                            <p>Mark the heel and the tip of your longest toe.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="size-guide-measure-step">
+
+                        <div class="size-guide-measure-number">03</div>
+
+                        <div class="size-guide-measure-text">
+
+                            <h4>Measure the Length</h4>
+
+                            <p>Use a ruler to measure the distance in centimeters.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="size-guide-measure-step">
+
+                        <div class="size-guide-measure-number">04</div>
+
+                        <div class="size-guide-measure-text">
+
+                            <h4>Match Your Size</h4>
+
+                            <p>Compare your measurement with our size chart above.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--======================================
+    Size & Fit Tips
+=======================================-->
+
+    <section class="size-guide-fit-tips section">
+
+        <div class="global-container">
+
+            <div class="section-title text-center">
+
+                <span class="section-subtitle">
+
+                    Size & Fit Tips
+
+                </span>
+
+                <h2>
+
+                    Get the Perfect Fit Every Time
+
+                </h2>
+
+                <p>
+
+                    Follow these simple tips to ensure maximum comfort and choose the right shoe size with confidence.
+
+                </p>
+
+            </div>
+
+            <div class="size-guide-fit-tips-grid">
+
+                <div class="size-guide-fit-tips-card">
+
+                    <div class="size-guide-fit-tips-icon">
+
+                        <i class="fa-solid fa-shoe-prints"></i>
+
+                    </div>
+
+                    <div class="size-guide-fit-tips-content">
+
+                        <h3 class="size-guide-fit-tips-title">
+
+                            Measure Both Feet
+
+                        </h3>
+
+                        <p class="size-guide-fit-tips-description">
+
+                            One foot may be slightly larger than the other. So use the larger measurement when
+                            selecting your shoe size.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="size-guide-fit-tips-card">
+
+                    <div class="size-guide-fit-tips-icon">
+
+                        <i class="fa-solid fa-socks"></i>
+
+                    </div>
+
+                    <div class="size-guide-fit-tips-content">
+
+                        <h3 class="size-guide-fit-tips-title">
+
+                            Wear Your Regular Socks
+
+                        </h3>
+
+                        <p class="size-guide-fit-tips-description">
+
+                            Measure your feet while wearing the socks you usually wear with your shoes for the clear
+                            best fit.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="size-guide-fit-tips-card">
+
+                    <div class="size-guide-fit-tips-icon">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </div>
+
+                    <div class="size-guide-fit-tips-content">
+
+                        <h3 class="size-guide-fit-tips-title">
+
+                            Measure in the Evening
+
+                        </h3>
+
+                        <p class="size-guide-fit-tips-description">
+
+                            Feet naturally expand throughout the day, so evening measurements provide the most accurate
+                            results.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="size-guide-fit-tips-card">
+
+                    <div class="size-guide-fit-tips-icon">
+
+                        <i class="fa-solid fa-ruler"></i>
+
+                    </div>
+
+                    <div class="size-guide-fit-tips-content">
+
+                        <h3 class="size-guide-fit-tips-title">
+
+                            Leave Toe Space
+
+                        </h3>
+
+                        <p class="size-guide-fit-tips-description">
+
+                            Leave about a thumb's width of space between your longest toe and the front of the shoe for
+                            more comfort.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--======================================
+    Size Guide FAQ
+=======================================-->
+
+    <section class="size-guide-faq section">
+
+        <div class="global-container">
+
+            <div class="section-title text-center">
+
+                <span class="section-subtitle">
+
+                    Frequently Asked Questions
+
+                </span>
+
+                <h2>
+
+                    Common Questions About Shoe Sizing
+
+                </h2>
+
+                <p>
+
+                    Find answers to the most frequently asked questions about shoe sizing, measurements, and finding
+                    your perfect fit.
+
+                </p>
+
+            </div>
+
+            <div class="size-guide-faq-wrapper">
+
+                <div class="size-guide-faq-item">
+
+                    <button class="size-guide-faq-question">
+
+                        <span>How do I know my correct shoe size?</span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="size-guide-faq-answer">
+
+                        <p>
+
+                            Measure your foot length in centimeters and compare it with our size chart. If you're
+                            between sizes, we recommend choosing the larger size for added comfort.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="size-guide-faq-item">
+
+                    <button class="size-guide-faq-question">
+
+                        <span>Should I choose a larger size if I'm between two sizes?</span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="size-guide-faq-answer">
+
+                        <p>
+
+                            Yes. Choosing the larger size provides extra comfort and allows your feet to move naturally
+                            throughout the day.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="size-guide-faq-item">
+
+                    <button class="size-guide-faq-question">
+
+                        <span>Do different shoe brands fit differently?</span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="size-guide-faq-answer">
+
+                        <p>
+
+                            While most brands follow standard sizing, slight variations in fit may occur depending on
+                            the shoe style, materials, and design.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="size-guide-faq-item">
+
+                    <button class="size-guide-faq-question">
+
+                        <span>Should I measure my feet with socks on?</span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="size-guide-faq-answer">
+
+                        <p>
+
+                            Yes. Wear the type of socks you normally use with your shoes to achieve the most accurate
+                            size measurement.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="size-guide-faq-item">
+
+                    <button class="size-guide-faq-question">
+
+                        <span>Can I exchange my shoes if the size doesn't fit?</span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="size-guide-faq-answer">
+
+                        <p>
+
+                            Absolutely. If your shoes don't fit as expected, you can request an exchange according to
+                            our exchange policy.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="size-support-banner section">
+
+        <div class="global-container">
+
+            <div class="size-support-banner-box">
+
+                <span class="size-support-banner-subtitle">
+
+                    Need More Assistance?
+
+                </span>
+
+                <h2 class="size-support-banner-heading">
+
+                    Still Looking for the Perfect Fit?
+
+                </h2>
+
+                <p class="size-support-banner-text">
+
+                    If you're unsure about your shoe size or need personalized guidance, our footwear experts are here
+                    to help. Contact our team and shop with confidence.
+
+                </p>
+
+                <div class="size-support-banner-buttons">
+
+                    <a href="contact.html" class="primary-btn">
+
+                        Contact Our Experts
+
+                    </a>
+
+                    <a href="collections.html" class="secondary-btn">
+
+                        Shop Footwear
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="global-container">
+
+            <!-- Newsletter -->
+
+            <div class="footer-newsletter">
+
+                <div>
+
+                    <h4>Subscribe to Our Newsletter</h4>
+
+                    <p>Get updates on new arrivals, offers, and exclusive collections.</p>
+
+                </div>
+
+                <form>
+
+                    <input type="email" placeholder="Enter your email">
+
+                    <button type="submit" class="primary-btn">
+
+                        Subscribe
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="footer-content">
+
+                <!-- Footer About -->
+
+                <div class="footer-column">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img src="images/logo.png" alt="UrbanSteps Logo">
+
+                    </a>
+
+                    <p>
+                        UrbanSteps offers premium footwear for men, women, and kids with stylish collections, trusted
+                        brands, and exceptional comfort for every step.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-column">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="collections.html">Collections</a></li>
+
+                        <li><a href="brands.html">Brands</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Collections -->
+
+                <div class="footer-column">
+
+                    <h4>Collections</h4>
+
+                    <ul>
+
+                        <li><a href="#">Men's Shoes</a></li>
+
+                        <li><a href="#">Women's Shoes</a></li>
+
+                        <li><a href="#">Sports Shoes</a></li>
+
+                        <li><a href="#">Kids Footwear</a></li>
+
+                        <li><a href="#">Seasonal Collection</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-column">
+
+                    <h4>Contact</h4>
+
+                    <ul class="footer-contact">
+
+                        <li>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            123 Fashion Street, Chennai, Tamil Nadu
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            +91 98765 43210
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            info@urbansteps.com
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            Mon - Sat : 9:00 AM - 8:00 PM
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 UrbanSteps. All Rights Reserved.
+
+                </p>
+
+                <div class="footer-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
