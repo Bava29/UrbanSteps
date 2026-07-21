@@ -15,6 +15,121 @@ const overlay = document.querySelector(".nav-overlay");
 const navLinks = document.querySelectorAll(".nav-menu a");
 
 // ================================
+// Scroll Reveal Animations
+// ================================
+
+document.documentElement.classList.add("reveal-ready");
+
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const revealObserver = prefersReducedMotion
+    ? null
+    : new IntersectionObserver((entries, observerInstance) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("is-visible");
+
+                observerInstance.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+
+        threshold: 0.18,
+
+        rootMargin: "0px 0px -8% 0px"
+
+    });
+
+function setupReveal(targets, effect = "fade-up", stagger = 0) {
+
+    targets.forEach((target, index) => {
+
+        if (!target) return;
+
+        target.classList.add("reveal-item", `reveal-${effect}`);
+
+        if (stagger) {
+
+            target.style.setProperty("--reveal-delay", `${index * stagger}ms`);
+
+        }
+
+        if (prefersReducedMotion) {
+
+            target.classList.add("is-visible");
+
+            return;
+
+        }
+
+        revealObserver?.observe(target);
+
+    });
+
+}
+
+function setupRevealBySelector(selector, effect = "fade-up", stagger = 0, scope = document) {
+
+    setupReveal(Array.from(scope.querySelectorAll(selector)), effect, stagger);
+
+}
+
+setupRevealBySelector(".hero-content", "fade-up");
+setupRevealBySelector(".page-hero-content", "fade-up");
+setupRevealBySelector(".home2-hero-content", "fade-up");
+setupRevealBySelector(".home2-hero-image", "zoom-in");
+setupRevealBySelector(".hero-stats", "fade-up");
+setupRevealBySelector(".section-title", "fade-up");
+setupRevealBySelector(".our-story-image", "fade-left");
+setupRevealBySelector(".our-story-content", "fade-right");
+setupRevealBySelector(".about-cta-content", "fade-up");
+setupRevealBySelector(".team-grid .team-card", "fade-up", 90);
+setupRevealBySelector(".why-grid .why-card", "fade-up", 90);
+setupRevealBySelector(".collection-tabs .collection-tab", "fade-up", 90);
+setupRevealBySelector(".collections-showcase .collection-display", "zoom-in");
+setupRevealBySelector(".collections-showcase .collection-display-image", "zoom-in");
+setupRevealBySelector(".collections-showcase .collection-display-content", "fade-right");
+setupRevealBySelector(".collection-grid .collection-card", "fade-up", 90);
+setupRevealBySelector(".products-grid .product-card", "fade-up", 90);
+setupRevealBySelector(".features-grid .feature-card", "fade-up", 90);
+setupRevealBySelector(".stats-grid .stat-card", "fade-up", 90);
+setupRevealBySelector(".testimonial-grid .testimonial-card", "fade-up", 90);
+setupRevealBySelector(".faq-grid .faq-item", "fade-up", 90);
+setupRevealBySelector(".collections-why-card", "fade-up", 90);
+setupRevealBySelector(".size-guide-faq-item", "fade-up", 90);
+setupRevealBySelector(".contact-info-grid .contact-info-card", "fade-up", 90);
+setupRevealBySelector(".contact-form-content", "fade-up");
+setupRevealBySelector(".contact-image", "fade-left");
+setupRevealBySelector(".map-wrapper", "zoom-in");
+setupRevealBySelector(".bulk-order-enquiry-form", "fade-up");
+setupRevealBySelector(".size-guide-chart-wrapper", "zoom-in");
+setupRevealBySelector(".size-guide-content", "fade-up");
+setupRevealBySelector(".size-guide-measure-image", "fade-left");
+setupRevealBySelector(".size-guide-measure-content", "fade-right");
+setupRevealBySelector(".size-guide-measure-step", "fade-up", 80);
+setupRevealBySelector(".size-support-banner-box", "fade-up");
+setupRevealBySelector(".collections-cta-wrapper", "fade-up");
+setupRevealBySelector(".lifestyle-card", "fade-up", 90);
+setupRevealBySelector(".signature-card", "fade-up", 90);
+setupRevealBySelector(".collection-row", "fade-up", 90);
+setupRevealBySelector(".brand-card", "zoom-in", 70);
+setupRevealBySelector(".trending-card", "fade-up", 90);
+setupRevealBySelector(".footer-newsletter", "fade-up");
+setupRevealBySelector(".footer-column", "fade-up", 90);
+setupRevealBySelector(".footer-bottom", "fade-up");
+setupRevealBySelector(".auth-card", "zoom-in");
+setupRevealBySelector(".auth-heading", "fade-up");
+setupRevealBySelector(".auth-form .form-group", "fade-up", 70);
+setupRevealBySelector(".auth-divider", "fade-up");
+setupRevealBySelector(".social-login .social-btn", "fade-up", 70);
+
+// ================================
 // Sticky Navbar
 // ================================
 
