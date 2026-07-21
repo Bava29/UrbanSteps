@@ -238,6 +238,9 @@ const desktopRTL = document.getElementById("rtl-toggle");
 
 const mobileRTL = document.getElementById("mobile-rtl-toggle");
 
+const heroSliderElement = document.querySelector(".hero-slider");
+let heroSwiper = null;
+
 function toggleRTL() {
 
     const html = document.documentElement;
@@ -245,6 +248,8 @@ function toggleRTL() {
     html.dir = html.dir === "rtl" ? "ltr" : "rtl";
 
     localStorage.setItem("dir", html.dir);
+
+    syncHeroSwiperDirection();
 
 }
 
@@ -261,29 +266,54 @@ if (savedDir) {
 }
 
 
-const heroSwiper = new Swiper(".hero-slider", {
+function initHeroSwiper() {
 
-    loop: true,
+    if (!heroSliderElement) return;
 
-    speed: 1000,
+    heroSwiper = new Swiper(heroSliderElement, {
 
-    autoplay: {
+        loop: true,
 
-        delay: 5000,
+        speed: 1000,
 
-        disableOnInteraction: false,
+        autoplay: {
 
-    },
+            delay: 5000,
 
-    pagination: {
+            disableOnInteraction: false,
 
-        el: ".swiper-pagination",
+        },
 
-        clickable: true,
+        pagination: {
 
-    },
+            el: ".swiper-pagination",
 
-});
+            clickable: true,
+
+        },
+
+    });
+
+    syncHeroSwiperDirection();
+
+}
+
+function syncHeroSwiperDirection() {
+
+    if (!heroSwiper) return;
+
+    const direction = document.documentElement.dir === "rtl" ? "rtl" : "ltr";
+
+    if (typeof heroSwiper.changeLanguageDirection === "function") {
+
+        heroSwiper.changeLanguageDirection(direction);
+        heroSwiper.update();
+
+    }
+
+}
+
+initHeroSwiper();
 
 
 const counters = document.querySelectorAll(".counter");
